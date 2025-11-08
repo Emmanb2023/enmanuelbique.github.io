@@ -65,6 +65,31 @@
       text-decoration: none;
     }
   </style>
+  <style>
+  .animate {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease-out;
+  }
+  .animate.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+</style>
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const elements = document.querySelectorAll(".animate");
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+        }
+      });
+    }, { threshold: 0.1 });
+
+    elements.forEach(el => observer.observe(el));
+  });
+</script>
 </head>
 <body>
 
@@ -78,12 +103,12 @@
   <img src="profile.jpg" alt="Enmanuel Bique">
 </header>
 
-<section>
+<section> class="animate">
   <h2>Personal Statement</h2>
   <p><strong>Professional Summary:</strong> I am a committed law student with a background in French and Spanish, now focused on becoming a respected solicitor and social economy leader. Known for my attention to detail, integrity, and strategic thinking, I bring a multicultural outlook and a passion for justice to every role. I thrive in fast-paced environments and aim to empower others through legal excellence and community impact.</p>
 </section>
 
-<section>
+<section> class="animate">
   <h2>Education</h2>
   <p><strong>Rathmines College, Dublin</strong> – QQI Certificate in Legal Studies (2025–2026)</p>
   <p>Core Modules: Applied Economics, Business Law, Criminology, Criminal Law, Legal Practice & Procedures, Communication, Word Processing, Case Management.</p>
@@ -93,7 +118,7 @@
   <p>Completed certified life coach training focused on holistic wellbeing, motivation, and personal development. Currently working toward CFI accreditation.</p>
 </section>
 
-<section>
+<section> class="animate">
   <h2>Skills</h2>
   <ul>
     <li>Highly adaptable, able to learn quickly in changing environments</li>
@@ -107,7 +132,7 @@
   </ul>
 </section>
 
-<section>
+<section> class="animate">
   <h2>Professional Experience</h2>
   <p><strong>Private Security Officer – RFC (2019–2023)</strong></p>
   <ul>
@@ -116,7 +141,7 @@
   </ul>
 </section>
 
-<section>
+<section> class="animate">
   <h2>Volunteer Work</h2>
   <ul>
     <li>2019–2020: Volunteered as a big brother at Tallaght Community Centre, helping with youth work, cooking, and planning sports events for a group of 10 children</li>
@@ -124,12 +149,12 @@
   </ul>
 </section>
 
-<section>
+<section> class="animate">
   <h2>Interests & Hobbies</h2>
   <p>I am a former professional boxer with a strong interest in wellness and energy healing, which help me stay grounded and focused. In addition to living a holistic lifestyle, I also enjoy jazz, painting, and the arts.</p>
 </section>
 
-<section>
+<section> class="animate">
   <h2>SWOT & SMART Plan</h2>
   <p><strong>Strengths:</strong> Communication, critical thinking, adaptability, creativity, honesty</p>
   <p><strong>Growth Areas:</strong> Management skill, teamwork — actively improving through training</p>
@@ -141,19 +166,19 @@
   <img src="enmanuel_performance_chart.png" alt="Performance Graph" style="max-width:100%; height:auto;">
 </section>
 
-<section>
+<section> class="animate">
   <h2>Values & Philosophy</h2>
   <p>I seek to improve everything I touch — to find solutions where others have failed. I bring fresh, innovative perspectives and a limitless mindset to every challenge. My mission is to empower, uplift, and lead with integrity.</p>
 </section>
 
-<section>
+<section> class="animate">
   <h2>Contact</h2>
   <p>📞 <strong>Phone:</strong> +353 89 605 3548</p>
   <p>📧 <strong>Email:</strong> <a href="mailto:biqfitness@proton.me">biqfitness@proton.me</a></p>
   <p>🔗 <strong>Linktree:</strong> <a href="https://linktr.ee/biqfitness" target="_blank">linktr.ee/biqfitness</a></p>
 </section>
 
-<section>
+<section> class="animate">
   <h2>Referees</h2>
   <ul>
     <li><strong>Lukas Wisniewski</strong> – Professional Trainer at David Floyd Gym<br>Tel: +353 89 444 8069</li>
