@@ -28,72 +28,16 @@
       border-radius: 10px;
       box-shadow: 0 0 10px rgba(0,0,0,0.2);
     }
-    h1 {
-      font-size: 36px;
-      margin-bottom: 0.3em;
-    }
-    h2 {
-      font-size: 28px;
-      margin-top: 1.5em;
-      margin-bottom: 0.5em;
-      color: #001f3f;
-    }
-    section {
-      margin-bottom: 2.5em;
-      border-left: 5px solid #006400;
-      padding-left: 1.2em;
-    }
-    .highlight {
-      color: #bfa100;
-      font-weight: bold;
-    }
-    .graph {
-      background-color: #f4f4f4;
-      padding: 1em;
-      border-radius: 8px;
-      text-align: center;
-    }
-    footer {
-      margin-top: 3em;
-      font-style: italic;
-      color: #444;
-      border-top: 1px solid #ccc;
-      padding-top: 1em;
-    }
-    a {
-      color: #006400;
-      text-decoration: none;
-    }
-
-    /* Scroll-in animation styles */
-    .animate {
-      opacity: 0;
-      transform: translateY(30px);
-      transition: all 0.8s ease-out;
-    }
-    .animate.visible {
-      opacity: 1;
-      transform: translateY(0);
-    }
+    h1 { font-size: 36px; margin-bottom: 0.3em; }
+    h2 { font-size: 28px; margin-top: 1.5em; margin-bottom: 0.5em; color: #001f3f; }
+    section { margin-bottom: 2.5em; border-left: 5px solid #006400; padding-left: 1.2em; }
+    .highlight { color: #bfa100; font-weight: bold; }
+    .graph { background-color: #f4f4f4; padding: 1em; border-radius: 8px; text-align: center; }
+    footer { margin-top: 3em; font-style: italic; color: #444; border-top: 1px solid #ccc; padding-top: 1em; }
+    a { color: #006400; text-decoration: none; }
+    .animate { opacity: 0; transform: translateY(30px); transition: all 0.8s ease-out; }
+    .animate.visible { opacity: 1; transform: translateY(0); }
   </style>
-<section class="timeline-section animate">
-  <h2>My Professional Journey</h2>
-  <iframe src="https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=YOUR_SHEET_ID&font=Georgia-Helvetica&lang=en&initial_zoom=2&height=650" width="100%" height="650" frameborder="0"></iframe>
-</section>
-  <script>
-    document.addEventListener("DOMContentLoaded", () => {
-      const elements = document.querySelectorAll(".animate");
-      const observer = new IntersectionObserver(entries => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add("visible");
-          }
-        });
-      }, { threshold: 0.1 });
-
-      elements.forEach(el => observer.observe(el));
-    });
-  </script>
 </head>
 <body>
 
@@ -102,37 +46,37 @@
     <h1>Enmanuel Bique</h1>
     <p class="highlight">Hybrid Lawyer | Wellness Mentor | Strategic Empowerment Coach</p>
     <p><em>Jurisprudence, Strategic Leadership, and Social Economy</em></p>
-    <p>Highly committed law student with a strong foundation in trilingual communication (French, Spanish, English) and a focus on lawful practice and social economy leadership. Possesses verifiable strengths in strategic thinking, meticulous attention to detail, and professional integrity.</p>
+    <p>Highly committed law student with a strong foundation in trilingual communication (French, Spanish, English) and a focus on lawful practice and social economy leadership.</p>
   </div>
   <img src="profile.jpg" alt="Enmanuel Bique">
 </header>
 
+<!-- ✅ Place the Timeline section here, inside <body> -->
+<section class="timeline-section animate">
+  <h2>My Professional Journey</h2>
+  <iframe src="https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=YOUR_SHEET_ID&font=Georgia-Helvetica&lang=en&initial_zoom=2&height=650" width="100%" height="650" frameborder="0"></iframe>
+</section>
+<section class="timeline-section animate">
+  <h2>My Professional Journey</h2>
+  <iframe src="https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=YOUR_SHEET_ID&font=Georgia-Helvetica&lang=en&initial_zoom=2&height=650" width="100%" height="650" frameborder="0"></iframe>
+</section>
 <section class="animate">
   <h2>Personal Statement</h2>
-  <p><strong>Professional Summary:</strong> I am a committed law student with a background in French and Spanish, now focused on becoming a respected solicitor and social economy leader. Known for my attention to detail, integrity, and strategic thinking, I bring a multicultural outlook and a passion for justice to every role. I thrive in fast-paced environments and aim to empower others through legal excellence and community impact.</p>
+  <p><strong>Professional Summary:</strong> I am a committed law student with a background in French and Spanish, now focused on becoming a respected solicitor and social economy leader...</p>
 </section>
 
 <section class="animate">
   <h2>Education</h2>
   <p><strong>Rathmines College, Dublin</strong> – QQI Certificate in Legal Studies (2025–2026)</p>
-  <p>Core Modules: Applied Economics, Business Law, Criminology, Criminal Law, Legal Practice & Procedures, Communication, Word Processing, Case Management.</p>
-  <p>Currently seeking work experience or internship opportunities in legal administration to apply and expand these skills in a professional setting.</p>
-
   <p><strong>Kingstown College, Dublin</strong> – QQI Certificate in Mental Health & Wellness Life Coaching (2024–2025)</p>
-  <p>Completed certified life coach training focused on holistic wellbeing, motivation, and personal development. Currently working toward CFI accreditation.</p>
 </section>
 
 <section class="animate">
   <h2>Skills</h2>
   <ul>
-    <li>Highly adaptable, able to learn quickly in changing environments</li>
-    <li>Strong attention to detail and commitment to service quality</li>
-    <li>Trustworthy, reliable, and dedicated to personal and professional growth</li>
-    <li>Excellent communication and teamwork abilities</li>
     <li>Legal research, document drafting, strategic advocacy</li>
     <li>Multilingual: French, Spanish, Portuguese</li>
     <li>Technical troubleshooting (Windows, Linux Mint, VirtualBox)</li>
-    <li>Content creation, TikTok marketing, creative direction</li>
   </ul>
 </section>
 
@@ -140,7 +84,7 @@
   <h2>Professional Experience</h2>
   <p><strong>Private Security Officer – RFC (2019–2023)</strong></p>
   <ul>
-    <li>Door supervision, including crowd management, theft prevention, and staff protection</li>
+    <li>Crowd management, theft prevention, staff protection</li>
     <li>CCTV monitoring and conflict resolution</li>
   </ul>
 </section>
@@ -148,21 +92,13 @@
 <section class="animate">
   <h2>Volunteer Work</h2>
   <ul>
-    <li>2019–2020: Volunteered as a big brother at Tallaght Community Centre, helping with youth work, cooking, and planning sports events for a group of 10 children</li>
-    <li>2018–2025: Boxing coach for youth and adults — led training sessions on Mondays, Wednesdays, and Fridays</li>
+    <li>Boxing coach and youth mentor (2018–2025)</li>
   </ul>
 </section>
 
 <section class="animate">
   <h2>Interests & Hobbies</h2>
-  <p>I am a former professional boxer with a strong interest in wellness and energy healing, which help me stay grounded and focused. In addition to living a holistic lifestyle, I also enjoy jazz, painting, and the arts.</p>
-</section>
-
-<section class="animate">
-  <h2>SWOT & SMART Plan</h2>
-  <p><strong>Strengths:</strong> Communication, critical thinking, adaptability, creativity, honesty</p>
-  <p><strong>Growth Areas:</strong> Management skill, teamwork — actively improving through training</p>
-  <p><strong>SMART Goal:</strong> Secure a respected role, contribute with innovation, and grow with the team</p>
+  <p>Wellness, energy healing, jazz, painting, and the arts.</p>
 </section>
 
 <section class="graph animate">
@@ -171,25 +107,28 @@
 </section>
 
 <section class="animate">
-  <h2>Values & Philosophy</h2>
-  <p>I seek to improve everything I touch — to find solutions where others have failed. I bring fresh, innovative perspectives and a limitless mindset to every challenge. My mission is to empower, uplift, and lead with integrity.</p>
-</section>
-
-<section class="animate">
   <h2>Contact</h2>
   <p>📞 <strong>Phone:</strong> +353 89 605 3548</p>
   <p>📧 <strong>Email:</strong> <a href="mailto:biqfitness@proton.me">biqfitness@proton.me</a></p>
-  <p>🔗 <strong>Linktree:</strong> <a href="https://linktr.ee/biqfitness" target="_blank">linktr.ee/biqfitness</a></p>
-</section>
-
-<section class="animate">
-  <h2>Referees</h2>
-  <ul>
-    <li><strong>Lukas Wisniewski</strong> – Professional Trainer at David Floyd Gym<br>Tel: +353 89 444 8069</li>
-    <li><strong>Shane Dalton</strong> – Tutor at Rathmines College<br>Email: <a href="mailto:shane.dalton@rc.cdetb.ie">shane.dalton@rc.cdetb.ie</a><br>Tel: +353 1 497 533</li>
-  </ul>
 </section>
 
 <footer>
   <p>By: Enmanuel: Bique©. For the Claimant's-Knowledge: By the Autograph of the Living-Man: Enmanuel: Bique©. With the Claim of the Life: With the Claim of the Rights-Reserved: Without Prejudice: UCC 1-308.</p>
 </footer>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const elements = document.querySelectorAll(".animate");
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+        }
+      });
+    }, { threshold: 0.1 });
+    elements.forEach(el => observer.observe(el));
+  });
+</script>
+
+</body>
+</html>
