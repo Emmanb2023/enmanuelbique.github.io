@@ -1,28 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Enmanuel Bique — Digital Résumé</title>
   <style>
     body {
-      font-family: 'Segoe UI', system-ui, -apple-system, Arial, sans-serif;
+      font-family: 'Segoe UI', system-ui, sans-serif;
       background-color: #f4f4f4;
       margin: 0;
       padding: 0;
-      color: #333;
-    }
-
-    header {
-      background-color: #0078D7;
-      color: white;
-      padding: 2rem;
-      text-align: center;
+      color: #222;
     }
 
     section {
       padding: 2rem;
-      border-bottom: 1px solid #ddd;
+      border-bottom: 1px solid #ccc;
     }
 
     h2 {
@@ -30,59 +23,71 @@
       margin-bottom: 1rem;
     }
 
-    img {
+    .animate {
+      animation: fadeIn 1s ease-in;
+    }
+
+    img, video {
       max-width: 100%;
       height: auto;
       display: block;
-      margin: 1rem 0;
+      margin-top: 1rem;
     }
 
-    a {
-      color: #0078D7;
-      text-decoration: none;
+    iframe {
+      width: 100%;
+      height: 650px;
+      border: none;
     }
 
-    a:hover {
-      text-decoration: underline;
+    footer {
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+      color: #666;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
     }
   </style>
 </head>
 <body>
 
-  <header>
-    <h1>Enmanuel Bique</h1>
-    <p>Hybrid Lawyer | Wellness Mentor | Digital Strategist</p>
-    <img src="https://raw.githubusercontent.com/Emmanb2023/digital-resume-assets/main/Law-office.png" alt="Enmanuel Bique — Profile Image">
-  </header>
+  <!-- TimelineJS Embed -->
+  <section class="animate">
+    <iframe src="https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=YOUR_SPREADSHEET_ID&font=Georgia-Helvetica&lang=en&initial_zoom=2&height=650" allowfullscreen></iframe>
+  </section>
 
-  <section>
+  <!-- Profile Image -->
+  <section class="animate">
+    <h2>Profile</h2>
+    <img src="https://raw.githubusercontent.com/Emmanb2023/digital-resume-assets/main/Law-office.png" alt="Enmanuel Bique — Profile Image">
+  </section>
+
+  <!-- Interests & Hobbies -->
+  <section class="animate">
     <h2>Interests & Hobbies</h2>
     <p>Wellness and energy practices, jazz, painting, and the arts. Former professional boxer.</p>
   </section>
 
-  <section>
-    <h2>Performance Graph</h2>
-    <img src="https://raw.githubusercontent.com/Emmanb2023/digital-resume-assets/main/Performance-Metric.png" alt="Performance Graph showing achievements and growth">
+  <!-- Performance Metric -->
+  <section class="animate">
+    <h2>Performance Metric</h2>
+    <img src="https://raw.githubusercontent.com/Emmanb2023/digital-resume-assets/main/Performance-Metric.png" alt="Performance Metric showing achievements and growth">
   </section>
 
-  <section>
-    <h2>Support Initiatives</h2>
-    <p>Visual summary of outreach and empowerment programs.</p>
-    <img src="https://raw.githubusercontent.com/Emmanb2023/digital-resume-assets/main/a.c.%26.Support-Initiatives.png" alt="Community Support Initiatives">
-    <video controls style="max-width:100%; margin-top:1rem;">
-      <source src="https://raw.githubusercontent.com/Emmanb2023/digital-resume-assets/main/a.c.%26Support-Initiatives.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
-  </section>
-
-  <section>
+  <!-- Contact -->
+  <section class="animate">
     <h2>Contact</h2>
-    <p>📞 <strong>Phone:</strong> +353 89 605 3548</p>
-    <p>📧 <strong>Email:</strong> <a href="mailto:biqfitness@proton.me">biqfitness@proton.me</a></p>
-    <p>🔗 <strong>Linktree:</strong> <a href="https://linktr.ee/biqfitness" target="_blank">linktr.ee/biqfitness</a></p>
+    <p><strong>Phone:</strong> +353 89 605 3548</p>
+    <p><strong>Email:</strong> <a href="mailto:biqfitness@proton.me">biqfitness@proton.me</a></p>
+    <p><strong>Linktree:</strong> <a href="https://linktr.ee/biqfitness" target="_blank">linktr.ee/biqfitness</a></p>
   </section>
 
-  <section>
+  <!-- Referees -->
+  <section class="animate">
     <h2>Referees</h2>
     <ul>
       <li><strong>Lukas Wisniewski</strong> — Professional Trainer at David Floyd Gym | Tel: +353 89 444 8069</li>
@@ -90,7 +95,8 @@
     </ul>
   </section>
 
-  <footer style="text-align:center; padding:2rem; font-size:0.9rem; color:#666;">
+  <!-- Closing Clause -->
+  <footer>
     By: Enmanuel: Bique©. For the Claimant's-Knowledge: By the Autograph of the Living-Man: Enmanuel: Bique©. With the Claim of the Life: With the Claim of the Rights-Reserved: Without Prejudice: UCC 1-308.
   </footer>
 
