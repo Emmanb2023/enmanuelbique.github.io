@@ -235,39 +235,41 @@
   });
 
   function openPopup(section) {
-    const popup = document.getElementById("popup");
-    const title = document.getElementById("popup-title");
-    const video = document.getElementById("popup-video");
-    const caption = document.getElementById("popup-caption");
+  const popup = document.getElementById("popup");
+  const title = document.getElementById("popup-title");
+  const source = document.getElementById("popup-source");
+  const video = document.getElementById("popup-video");
+  const caption = document.getElementById("popup-caption");
 
-    const content = {
-      education: {
-        title: "Education",
-        video: Avatar-Enmanuel..mp4",
-        caption: "Here’s how my legal and wellness studies empower my professional journey."
-      },
-      skills: {
-        title: "Skills",
-        video: "Avatar-Enmanuel..mp4",
-        caption: "These are the tools I use to lead, coach, and innovate across disciplines."
-      },
-      performance: {
-        title: "Performance Metric",
-        video: "Avatar-Enmanuel..mp4",
-        caption: "This video breaks down my strategic impact and growth indicators."
-      },
-      communication: {
-        title: "Communication",
-        video: "Avatar-Enmanuel..mp4",
-        caption: "Watch how I connect, mentor, and lead with clarity and empathy."
-      }
-    };
+  const content = {
+    education: {
+      title: "Education",
+      video: "digital-resume-assets/Avatar-Enmanuel.mp4",
+      caption: "Here’s how my legal and wellness studies empower my professional journey."
+    },
+    skills: {
+      title: "Skills",
+      video: "digital-resume-assets/Avatar-Enmanuel.mp4",
+      caption: "These are the tools I use to lead, coach, and innovate across disciplines."
+    },
+    performance: {
+      title: "Performance Metric",
+      video: "digital-resume-assets/Avatar-Enmanuel.mp4",
+      caption: "This video breaks down my strategic impact and growth indicators."
+    },
+    communication: {
+      title: "Communication",
+      video: "digital-resume-assets/Avatar-Enmanuel.mp4",
+      caption: "Watch how I connect, mentor, and lead with clarity and empathy."
+    }
+  };
 
-    title.textContent = content[section].title;
-    video.src = content[section].video;
-    caption.textContent = content[section].caption;
-    popup.style.display = "block";
-  }
+  title.textContent = content[section].title;
+  source.src = content[section].video;
+  video.load();
+  caption.textContent = content[section].caption;
+  popup.style.display = "block";
+}
 
   function closePopup() {
     document.getElementById("popup").style.display = "none";
